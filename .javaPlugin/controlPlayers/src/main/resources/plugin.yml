@@ -1,0 +1,4 @@
+name: controlPlayers
+version: '1.0-SNAPSHOT'
+main: me.tx0ndev.controlPlayers.ControlPlayers
+api-version: '1.21'

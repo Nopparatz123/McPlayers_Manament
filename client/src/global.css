@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@plugin "daisyui" {
+    themes: false;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(./assets/Kanit-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(./assets/Kanit-Regular.ttf);
+    font-weight: 400;
+}
+
+
+body {
+    font-family: 'Kanit';
+}
+
+.badgeError{
+    @apply absolute top-0.5 right-0.5 grid min-h-[24px] min-w-[24px] translate-x-2/4 -translate-y-2/4 place-items-center rounded-full bg-red-500 py-1 px-1 text-xs text-white
+}
+
+.badgeWarning{
+    @apply absolute top-0.5 right-0.5 grid min-h-[24px] min-w-[24px] translate-x-2/4 -translate-y-2/4 place-items-center rounded-full bg-yellow-500  py-1 px-1 text-xs text-white
+}
+
+.badgeSuccess{
+    @apply absolute top-0.5 right-0.5 grid min-h-[24px] min-w-[24px] translate-x-2/4 -translate-y-2/4 place-items-center rounded-full bg-green-500 py-1 px-1 text-xs text-white
+}
